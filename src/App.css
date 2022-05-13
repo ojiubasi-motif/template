@@ -1,0 +1,209 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  padding: 0 1rem;
+}
+
+.App {
+  height: 100vh;
+  background-color: #f0fff0;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px 0 30px;
+}
+
+.authed-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.header {
+  margin: 0;
+  margin-top:70px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.top-nav{
+  width:95vw;
+  height:60px;
+  display:flex;
+  background: -webkit-linear-gradient(left, lightgray 30%, darkgray 40%, darkgray 30%);
+  justify-content:space-evenly;
+  align-items:center;
+  position:fixed;
+  top:2px;
+  z-index:9;
+  border-radius: 25px;
+/*   padding:0 5px; */
+}
+
+.left{
+  font-size:34px;
+  font-weight:bolder;
+  color:#4b0082;
+}
+.preview-gif{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+}
+.img-preview{
+  width:75px;
+  height:75px;
+  object-fit:cover;
+}
+.connected-wallet{
+  font-size:14px;
+  font-weight:bold;
+  background: -webkit-linear-gradient(left, red 30%, crimson 60%);
+  padding:5px 15px;
+  border-radius: 10px;
+  color:white;
+}
+
+.sub-text {
+  font-size: 25px;
+  color: #2f4f4f;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.submit-gif-button {
+  background: -webkit-linear-gradient(left, #4b0082, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-left: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 45px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+  
+}
+
+.footer-text {
+  color: #4b0082;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gif-grid .gif-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  border-bottom: 2px solid gray;
+  margin-bottom: 1rem;
+}
+
+.gif-item img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+/*   border-bottom:1px solid gray; */
+}
+
+.connected-container input[type='text'] {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.connected-container button {
+  height: 50px;
+}
+.wallet-wrapper{
+color:white;
+}
+.post_author{
+  color:slategray;
+}
+.tip-btn{
+  background: -webkit-linear-gradient(left, crimson, purple);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin:auto 0;
+  color:white;
+
+  
+}
+.tip-btn:hover{
+    color:crimson;
+    background:-webkit-linear-gradient(left, white, slategray);
+  }
+.divider{
+  width:90%;
+  height:1px;
+}
+
+.post-details{
+  width:400px;
+  display:flex;
+  justify-content:space-between;
+}
